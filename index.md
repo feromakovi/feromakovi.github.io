@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="https://github.com/feromakovi.png" width="150" style="border-radius: 50%; border: 3px solid #1e90ff; margin-bottom: 20px;" alt="Richard Samela Avatar" />
+  <br />
   <a href="https://github.com/feromakovi"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="mailto:feromakovi@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
