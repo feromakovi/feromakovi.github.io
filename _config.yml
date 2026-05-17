@@ -1,0 +1,6 @@
+title: Richard Samela | Mobile & Backend Engineer
+description: Product-minded engineer specializing in mobile architecture, data pipelines, and AI integrations.
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag
