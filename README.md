@@ -5,7 +5,7 @@ Product-minded engineer specializing in mobile architecture, data pipelines, and
 <div align="center">
   <a href="https://github.com/feromakovi"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" /></a>
   <a href="mailto:feromakovi@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" /></a>
-  <a href="https://feromakovi.github.io/richard_samela_cv.pdf"><img src="https://img.shields.io/badge/Download%20PDF-0077B5?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download PDF Badge" /></a>
+  <a href="https://feromakovi.github.io/assets/richard_samela_cv.pdf"><img src="https://img.shields.io/badge/Download%20PDF-0077B5?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download PDF Badge" /></a>
 </div>
 
 ---

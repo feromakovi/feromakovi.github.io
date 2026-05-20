@@ -5,9 +5,11 @@ on:
     branches:
       - main
     paths:
-      - 'cv.md'
+      - 'assets/cv.md'
       - 'src/generate.py'
-      - 'res/pdf-style.css'
+      - 'src/generate_pdf.sh'
+      - 'src/commit_push.sh'
+      - 'src/pdf-style.css'
   workflow_dispatch:
 
 permissions:
@@ -34,22 +36,7 @@ jobs:
           node-version: '20'
 
       - name: Generate PDF
-        run: |
-          npx md-to-pdf cv.md --launch-options '{"args": ["--no-sandbox", "--disable-setuid-sandbox"]}' --stylesheet res/pdf-style.css
-          mv cv.pdf richard_samela_cv.pdf
+        run: bash src/generate_pdf.sh
 
       - name: Commit and Push Changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # Stage the auto-generated files
-          git add index.md README.md richard_samela_cv.pdf
-          
-          # Only commit and push if there are actual modifications staged
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "docs: auto-generate index.md, README.md, and CV PDF [skip ci]"
-            git push origin main
-          fi
+        run: bash src/commit_push.sh
