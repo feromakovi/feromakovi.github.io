@@ -1,9 +1,14 @@
+# Richard Samela | Mobile & Backend Engineer
+
+Product-minded engineer specializing in mobile architecture, data pipelines, and AI integrations.
+
 <div align="center">
-  <img src="https://github.com/feromakovi.png" width="150" style="border-radius: 50%; border: 3px solid #1e90ff; margin-bottom: 20px;" alt="Richard Samela Avatar" />
-  <br />
   <a href="https://github.com/feromakovi"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" /></a>
   <a href="mailto:feromakovi@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" /></a>
+  <a href="https://feromakovi.github.io/richard_samela_cv.pdf"><img src="https://img.shields.io/badge/Download%20PDF-0077B5?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download PDF Badge" /></a>
 </div>
+
+---
 
 ## Professional Summary
 

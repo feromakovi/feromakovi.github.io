@@ -1,0 +1,54 @@
+name: Generate CV Artifacts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'cv.md'
+      - 'src/generate.py'
+      - 'res/pdf-style.css'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate index.md and README.md
+        run: python3 src/generate.py
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate PDF
+        run: |
+          npx md-to-pdf cv.md richard_samela_cv.pdf --launch-options '{"args": ["--no-sandbox", "--disable-setuid-sandbox"]}' --stylesheet res/pdf-style.css
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Stage the auto-generated files
+          git add index.md README.md richard_samela_cv.pdf
+          
+          # Only commit and push if there are actual modifications staged
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: auto-generate index.md, README.md, and CV PDF [skip ci]"
+            git push origin main
+          fi
