@@ -67,7 +67,7 @@ Senior engineer shipping multimodule Android SDKs and Go BFF plugins across regu
 
 ## AI & Product Initiatives
 
-- **On premise LLM for a client (accounting firm).** Deployed Gemma locally on client premises for confidential document. Owned the full setup — model retrieval, runtime environment, and surrounding ecosystem — under strict confidentiality requirements driven by the client's sensitive accounting data. Experimented with fine-tuning on client documents to better match domain language.
+- **On premise LLM for a client.** Deployed Gemma locally on client premises for confidential document. Owned the full setup — model retrieval, runtime environment, and surrounding ecosystem — under strict confidentiality requirements driven by the client's sensitive accounting data. Experimented with fine-tuning on client documents to better match domain language.
 - **Autonomous LangChain based research agent.** Multi-provider (Anthropic, OpenAI, Google, Ollama) with LangSmith evaluations, a planner/scratchpad loop, browser tooling, and a pluggable "Skills" extension model.
 - **Agentic mobile development.** Drove multiplatform native parity (iOS / Android / Web) using agent assisted workflows.
 - **Continuous tracking** of the AI tooling ecosystem — LangChain, MCP, RAG patterns, local LLMs (Ollama), and model deployment tradeoffs — directly transferable to AI pipelines that turn noisy data into structured, actionable intelligence.
