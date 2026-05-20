@@ -35,7 +35,8 @@ jobs:
 
       - name: Generate PDF
         run: |
-          npx md-to-pdf cv.md richard_samela_cv.pdf --launch-options '{"args": ["--no-sandbox", "--disable-setuid-sandbox"]}' --stylesheet res/pdf-style.css
+          npx md-to-pdf cv.md --launch-options '{"args": ["--no-sandbox", "--disable-setuid-sandbox"]}' --stylesheet res/pdf-style.css
+          mv cv.pdf richard_samela_cv.pdf
 
       - name: Commit and Push Changes
         run: |
